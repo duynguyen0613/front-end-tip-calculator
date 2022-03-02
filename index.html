@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img class="logo--img" src="images/logo.svg" />
+      </div>
+      <div class="calculator">
+        <div class="group-control">
+          <label for="bill">Bill</label>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <input class="bill-input" type="number" value="142.55" />
+        </div>
+        <div class="group-control">
+          <label for="tip">Select Tip %</label>
+          <div class="tip-container">
+            <div class="tip-item">5%</div>
+            <div class="tip-item">10%</div>
+            <div class="tip-item active">15%</div>
+            <div class="tip-item">25%</div>
+            <div class="tip-item">50%</div>
+            <div class="tip-item tip-item--custom">Custom</div>
+          </div>
+        </div>
+        <div class="group-control">
+          <label for="people">Number of People</label>
+          <i class="fa-solid fa-user"></i>
+          <input
+            class="people-input"
+            min="1"
+            max="20"
+            type="number"
+            value="5"
+          />
+        </div>
+        <div class="footer">
+          <div class="footer-item">
+            <p>Tip Amount <span>/ person</span></p>
+            <h3 class="footer-tip">$4.27</h3>
+          </div>
+          <div class="footer-item">
+            <p>Total <span>/ person</span></p>
+            <h3 class="footer-total">$32.79</h3>
+          </div>
+          <button>RESET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
